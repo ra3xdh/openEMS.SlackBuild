@@ -33,6 +33,9 @@ echo "There were build errors..."
 exit 1;
 fi
 
+mkdir -p $OUTPUT/install
+cat $CWD/$PRGNAM.slack-desc>$OUTPUT/install/slack-desc
+
 cd $OUTPUT
 chown -R root:root $PKG
 PKGFILE=$TMP/$PKGNAM-$VERSION-$ARCH-$BUILD.txz
