@@ -34,7 +34,7 @@ exit 1;
 fi
 
 mkdir -p $OUTPUT/install
-cat $CWD/$PRGNAM.slack-desc>$OUTPUT/install/slack-desc
+cat $CWD/$PKGNAM.slack-desc>$OUTPUT/install/slack-desc
 
 cd $OUTPUT
 chown -R root:root $PKG
